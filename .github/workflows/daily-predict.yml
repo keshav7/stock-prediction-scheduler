@@ -1,0 +1,13 @@
+name: Run Daily Stock Prediction
+
+on:
+  schedule:
+    - cron: '40 1 * * *'  # every day at 9AM UTC
+
+jobs:
+  predict:
+    runs-on: ubuntu-latest
+    steps:
+      - name: Call Prediction API
+        run: curl -X POST https://stock-prediction-api-production-46e8.up.railway.app/evaluate
+
