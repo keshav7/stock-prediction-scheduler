@@ -3,6 +3,7 @@ name: Run Daily Stock Prediction
 on:
   schedule:
     - cron: '22 20 * * *'  # every day at 9AM UTC
+  workflow_dispatch:      # <--- Add this line for manual run  
 
 jobs:
   predict:
