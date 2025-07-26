@@ -9,5 +9,5 @@ jobs:
     runs-on: ubuntu-latest
     steps:
       - name: Call Prediction API
-        run: curl -X POST https://stock-prediction-api-production-46e8.up.railway.app/evaluate
+        run: curl -X POST https://stock-prediction-api-production-46e8.up.railway.app/predict
 
