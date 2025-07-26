@@ -2,7 +2,7 @@ name: Run Daily Stock Prediction
 
 on:
   schedule:
-    - cron: '50 20 * * *'  # every day at 9AM UTC
+    - cron: '22 20 * * *'  # every day at 9AM UTC
 
 jobs:
   predict:
